@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+  <!-- Caption -->
+   <!-- caption is used for providing the caption fot the table name
+    it can be used for giving some name to the table -->
+  <caption>Employee Information</caption>
+
+  <!-- Table Header -->
+   <!-- thead (table heading) with tr(table row) and th used to create the header with column names in html  -->
+  <thead>
+    <!-- tr is used to create  a row inside the table -->
+    <tr>
+
+        <!-- th(table head) and tr(table row) used to fill a column in a row -->
+      <th>ID</th>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+
+  <!-- Table Body -->
+   <!-- t body used to write data inside the table body -->
+
+  <tbody>
+
+    <tr>
+        <!-- td means table data used to push data inside table body -->
+      <td>1</td>
+      <td>Alice</td>
+      <td>Developer</td>
+
+      <!-- rowspan used to spread single data in multiple rows -->
+      <td rowspan="2">$80,000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Bob</td>
+      <td>Designer</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Carol</td>
+      <td>Manager</td>
+      <td>$90,000</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <!-- colspan used to spread same data in multiple columns -->
+        <td colspan="2">travis</td>
+        <td>$23234</td>
+    </tr>
+  </tbody>
+
+  <!-- Table Footer  used to add data inside the table footer-->
+  <tfoot>
+    <tr>
+        <!-- colspan used to spread data through multiple columns -->
+      <td colspan="3">Total Employees</td>
+      <td>3</td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>
