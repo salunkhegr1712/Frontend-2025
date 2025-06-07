@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <!-- we're going to create a form for job application with some complex functionality -->
+    <form action="/submit"  method="post">
+        <h1>Job Aplication</h1>
+        <hr>
+        <h3>Personal Information :</h3>
+
+        <label for="fullname">Full Name :&nbsp; </label>
+        <input type="text" name="fullname" id="fullname" placeholder="FIRST MIDDLE SURNAME" required autofocus>
+
+        <br><br>
+
+        <label for="email">Email :&nbsp;</label>
+        <input type="email" name="email" id="email" placeholder="gmail perfered" required>
+        <br><br>
+        <label for="cellnumber">Contact Number :&nbsp;</label>
+        <input type="number" name="cellnumber" id="cellnumber" required >
+        <br><br>
+
+        <label for="dob">Date of Birth :&nbsp;</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male-gender" value="male" name="gender"> 
+        <label for="gender-male">Male</label>
+
+        <input type="radio" id="female-gender" value="female" name="gender"> 
+        <label for="gender-female">Female</label>
+
+        <input type="radio" id="not-mentioned-gender" value="not-mentioned" name="gender"> 
+        <label for="not-mentioned-gender">dont want to mention</label>
+        <br><br>
+
+        <label for="photo">upload photo here : </label> <br><br>
+        <input type="file" name="photp" id="photo">
+        <br><br>
+
+        <hr>
+        <h3>Address Information : </h3>
+        <textarea name="street-address" id="street-address" placeholder="street-address"></textarea>
+        <textarea name="city" id="city" placeholder="city" required></textarea>
+        <br><br>
+        <select name="state" id="state" >
+            <option value="KA">Karnataka</option>
+            <option value="MH">Maharashtra</option>
+            <option value="RJ">Rajsthan</option>
+            op
+        </select>
+
+    </form>
+</body>
+</html>

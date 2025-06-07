@@ -1,0 +1,59 @@
+
+<!-- to write the form form tag is used and its main tag  -->
+<!-- internally it contains various different field which needed from user inputs -->
+
+<!-- attribute action and method suject form behaviour /submit means when you click submit method post will be triggered -->
+<!-- we can go inside the details of form after some time  -->
+<form action="/submit" method="post">
+
+    <!-- Text input for username -->
+
+    <!-- we use label to provide context for which we want to receive data from user  -->
+    <label for="username">Username:</label>
+
+    <!-- input can be of many types it has various categories too -->
+    <!-- input attribute type refer to type for which we want the data 
+        input attribute id to provide id & name for the that input tab, those will be used to identify the perticular value after submission of the form
+        the value can help to provide default value which can be overridden by the user
+        required attribute is flaf to make a perticular input mandatory or optional
+    -->
+    <input type="text" id="username" name="username" value="ghansham" required>
+    <br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- use can use placeholder inside th input only if you dont want to use the explicit label -->
+
+    <input type="text" id="person-name" name="person-name" placeholder="enter your name here?" required >
+    <!-- Radio buttons for gender -->
+    
+    <br><br>
+    <label>Gender:</label>
+
+    <!-- here we're using same name for radio button and as name is same both inputs will provide one output 
+        id is one different creator on top of id for name we will get as output 
+    -->
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- we can also create checkbox input -->
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="checkbox">Subscribe to Ghansham Website</label>
+
+    <br><br>
+    <!-- Submit button -->
+     <!-- input value with submit will submit the form and method in form will get triggered -->
+    <!-- you can verify this activity when you go to network sectio inside developer tools of website and monitor the network -->
+     <input type="submit" value="Submit"> 
+     <input type="reset">
+
+     
+     <button><a href="./forms-in-html.html" target="_blank">forms</a></button>
+     <!-- we can have input called reset which can reset the form data  -->
+</form>
