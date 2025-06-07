@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
 </head>
+
 <body>
     <!-- we're going to create a form for job application with some complex functionality -->
-    <form action="/submit"  method="post">
+    <form action="/submit" method="post">
         <h1>Job Aplication</h1>
         <hr>
         <h3>Personal Information :</h3>
@@ -21,7 +23,7 @@
         <input type="email" name="email" id="email" placeholder="gmail perfered" required>
         <br><br>
         <label for="cellnumber">Contact Number :&nbsp;</label>
-        <input type="number" name="cellnumber" id="cellnumber" required >
+        <input type="number" name="cellnumber" id="cellnumber" required>
         <br><br>
 
         <label for="dob">Date of Birth :&nbsp;</label>
@@ -29,32 +31,69 @@
         <br><br>
 
         <label for="gender">Gender</label>
-        <input type="radio" id="male-gender" value="male" name="gender"> 
+        <input type="radio" id="male-gender" value="male" name="gender">
         <label for="gender-male">Male</label>
 
-        <input type="radio" id="female-gender" value="female" name="gender"> 
+        <input type="radio" id="female-gender" value="female" name="gender">
         <label for="gender-female">Female</label>
 
-        <input type="radio" id="not-mentioned-gender" value="not-mentioned" name="gender"> 
+        <input type="radio" id="not-mentioned-gender" value="not-mentioned" name="gender">
         <label for="not-mentioned-gender">dont want to mention</label>
         <br><br>
 
         <label for="photo">upload photo here : </label> <br><br>
-        <input type="file" name="photp" id="photo">
+        <input type="file" name="photo" id="photo">
         <br><br>
 
         <hr>
         <h3>Address Information : </h3>
         <textarea name="street-address" id="street-address" placeholder="street-address"></textarea>
-        <textarea name="city" id="city" placeholder="city" required></textarea>
+        <textarea name="city" id="city" placeholder="city" required></textarea> <br>
+        <input type="number" name="pincode" id="pincode" placeholder="pincode">
         <br><br>
-        <select name="state" id="state" >
+        <select name="state" id="state">
             <option value="KA">Karnataka</option>
             <option value="MH">Maharashtra</option>
             <option value="RJ">Rajsthan</option>
-            op
+            <option value="TN">Tamil Nadu</option>
+            <option value="OR">Orisa</option>
         </select>
 
+        <hr>
+
+        <h3>Position Details</h3>
+        <label for="position">Position :&nbsp;</label>
+        <select name="position" id="position">
+            <option value="de2001">Data Enginner</option>
+            <option value="ee2001">Electrical Engineer</option>
+            <option value="am2002">Agile Master</option>
+            <option value="hr2001">Hiring Recruiter</option>
+            <option value="lse2001">Lead Software Engineer</option>
+            <option value="jfse2001">Java Full Stack Developer</option>
+        </select> <br><br>
+        <label for="start-date">Available start Date : &nbsp;</label>
+        <input type="date" name="start-date" id="start-date"><br><br>
+        <label for="salary-expectation">Salary Expectation :&nbsp; </label> <input type="number"
+            name="salary-expectation" placeholder="in lakhs" id="salary-expectation" min="1" max="100"><br><br>
+
+        <!-- Years of Experience -->
+        <label for="experience">Years of Experience: <span id="exp-value">10</span></label>
+        <input type="range" id="experience" name="experience" min="0" max="20" value="10"
+            oninput="document.getElementById('exp-value').textContent = this.value;"> <br><br>
+
+        <label for="resume">upload resume here : </label> <br><br>
+        <input type="file" name="resume" id="resume"><br><br>
+        <input type="checkbox" name="rellocate" id="rellocate">
+        <label for="rellocate">Willing to Rellocate : &nbsp;</label>
+        <br><br>
+
+        <!-- submit & reset buttons  -->
+         <input type="reset"> &nbsp;
+         <input type="submit">
     </form>
 </body>
+
 </html>
+
+<!-- sample submission -->
+ <!-- fullname=dfgd&email=dfg%40gmail.com&cellnumber=08624969401&dob=2025-06-25&gender=male&photo=ghansham-new.png&street-address=Gavtan+Morochi%2C+taluqa+malshiras%2C+district+solapur&city=dfgs&pincode=413109&state=MH&position=de2001&start-date=&salary-expectation=23&experience=10&resume=Resume.pdf&rellocate=on -->
